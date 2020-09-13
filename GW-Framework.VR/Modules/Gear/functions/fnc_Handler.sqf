@@ -92,22 +92,22 @@ if (_isMan) then {
 		if (GVARMAIN(mod_ACE3)) then {
 			_unit setVariable ["ACE_Medical_MedicClass", 1];	// IsMedic
 			_unit setVariable ["ACE_IsEngineer", 1];			// isEngineer
-			_unit setVariable ["ACE_GForceCoef", 0.75];			// IsPilot
+			_unit setVariable ["ACE_GForceCoef", 0.2];			// IsPilot
 		};
 	};
 
 	if (_forceFaction isEqualTo "") then {
-		switch ([_unit] call EFUNC(Common,getSide)) do {
-			case east: {
+		switch (GETSIDE(_unit)) do {
+			case 0: {
 				_side = toUpper(GVAR(Opfor));
 			};
-			case west: {
+			case 1: {
 				_side = toUpper(GVAR(Blufor));
 			};
-			case independent: {
+			case 2: {
 				_side = toUpper(GVAR(Independent));
 			};
-			case civilian: {
+			case 3: {
 				_side = toUpper(GVAR(Civilian));
 			};
 		};
@@ -150,21 +150,6 @@ if (_isMan) then {
 				[{
 					_this call EFUNC(Radios,add);
 				}, [_unit, _role], 0.1] call CBA_fnc_waitAndExecute;
-			};
-		} else {
-			switch ([_unit] call EFUNC(Common,getSide)) do {
-				case east: {
-					[_unit,"insignia_Opfor"] call bis_fnc_setUnitInsignia;
-				};
-				case west: {
-					[_unit,"insignia_Blufor"] call bis_fnc_setUnitInsignia;
-				};
-				case independent: {
-					[_unit,"insignia_Indep"] call bis_fnc_setUnitInsignia;
-				};
-				case civilian: {
-					[_unit,"insignia_Civi"] call bis_fnc_setUnitInsignia;
-				};
 			};
 		};
 		LOG(FORMAT_2("Unit: %1, Role: %2", _unit, _role));

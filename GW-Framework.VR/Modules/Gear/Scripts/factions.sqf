@@ -63,6 +63,70 @@ switch (_side) do {
 	case "USMC-W": {
 		#include "Classes\USMC-W.sqf"
 	};
+	case "CSAT-V": {
+		#include "Classes\CSAT-V.sqf"
+	};
+	case "SWAT": {
+		#include "Classes\SWAT.sqf"
+	};
+	case "SPETSNAZ": {
+		#include "Classes\Spetsnaz.sqf"
+	};
+	case "NATO-CTRG": {
+		#include "Classes\CTRG.sqf"
+	};
+	case "SAS": {
+		#include "Classes\SAS.sqf"
+	};
+	case "MARSOC": {
+		#include "Classes\MARSOC.sqf"
+	};
+	case "ACR": {
+		#include "Classes\ACR.sqf"
+	};
+	case "601STSFG": {
+		#include "Classes\601STSFG.sqf";
+	};
+	case "CDF-D": {
+		#include "Classes\CDF-D.sqf";
+	};
+	case "CDF-F": {
+		#include "Classes\CDF-F.sqf";
+	};
+	case "CDF-M": {
+		#include "Classes\CDF-M.sqf";
+	};
+	case "US-OCP": {
+		#include "Classes\US-OCP.sqf";
+	};
+	case "US-UCP": {
+		#include "Classes\US-UCP.sqf";
+	};
+	case "US-R": {
+		#include "Classes\US-R.sqf";
+	};
+	case "SLA": {
+		#include "Classes\SLA.sqf";
+	};
+	case "SYND": {
+		#include "Classes\SYND.sqf";
+	};
+	case "UN": {
+		#include "Classes\UN.sqf";
+	};
+	case "LDF": {
+		#include "Classes\LDF.sqf";
+	};
+	case "RACS-URB": {
+		#include "Classes\RACS-URB.sqf";
+	};
+	case "RACS-ADPM": {
+		#include "Classes\RACS-ADPM.sqf";
+	};
+	case "RACS-WDPM": {
+		#include "Classes\RACS-WDPM.sqf";
+	};
+
 	default {
 		_errorCode = true;
 		ERROR(FORMAT_1("Faction does not exist: %1", _side));
