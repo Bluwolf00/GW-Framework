@@ -6,7 +6,6 @@
 	#include "MHQ\Module.hpp"
 	#include "MiscSettings\Module.hpp"
 	#include "Radios\Module.hpp"
-	#include "ServiceStation\Module.hpp"
 	#include "SetDifficulty\Module.hpp"
 	#include "Settings_ACE\Module.hpp"
 
