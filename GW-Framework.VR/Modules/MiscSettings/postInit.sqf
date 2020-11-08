@@ -22,7 +22,7 @@ if (isClass(configFile >> "CfgPatches" >> "GW_menu")) then {
 		"","","",
 		[QUOTE(call FUNC(customMenu_Framework)),"framework", 1],
 		-1,true,
-		(!EGVAR(GameLoop,SafeMode_useType))
+		(EGVAR(GameLoop,SafeMode_useType))
 	] call FUNC(addToFlexiMenu);
 };
 
