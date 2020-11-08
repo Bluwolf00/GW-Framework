@@ -23,7 +23,7 @@ GVAR(SafeZoneMarkers) = [];
 [
 	QGVAR(SafeMode_useType), "LIST",
 	["Safe Start Mode", ""],
-	[QUOTE(ADDON), "SafeMode"], [[true,false], ["Countdown", "Admin Only"], 0],
+	[QUOTE(ADDON), "SafeMode"], [[0,1,2], ["Disabled", "Countdown", "Admin Only"], 0],
 	CBA_SERVEROVERWRITE, {}, CBA_NEEDRESTART
 ] call CBA_settings_fnc_init;
 
