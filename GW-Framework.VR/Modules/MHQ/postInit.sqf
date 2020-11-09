@@ -70,24 +70,24 @@
 	_mhq setVariable [QGVAR(ActiveActions), []];
 
 	if (_mhq getVariable QGVAR(Active)) then {
-		_id = _mhq addAction ["Deactivate MHQ",{
+		_id = _mhq addAction ["Deactivate MHQ",{ player PlayMove "Acts_carFixingWheel";
 			["Deactivating MHQ", 5, {(((_this select 0) select 0) getVariable "GW_MHQ_Active")}, {
-				([QGVAR(Enabled), [((_this select 0) select 0), false, str([player] call EFUNC(Common,getSide))]] call CBA_fnc_serverEvent);
-			}, {hint "aborted"}, [(_this select 0)]] call CBA_fnc_progressBar;
+				([QGVAR(Enabled), [((_this select 0) select 0), false, str([player] call EFUNC(Common,getSide))]] call CBA_fnc_serverEvent); player SwitchMove "";
+			}, {player SwitchMove ""; hint "Aborted";} , [(_this select 0)]] call CBA_fnc_progressBar;
 		},ARGUMENT(_mhq),(CONDITION_1 + "&& !" + CONDITION_2),7];
 		_add pushback [_mhq, _id];
 
 		_id = _mhq addAction ["Assemble MHQ",{
-			["Assembling MHQ", 10, {!(((_this select 0) select 0) getVariable "GW_MHQ_Assembled")}, {
-				([QGVAR(Assembled), [((_this select 0) select 0), true]] call CBA_fnc_serverEvent);
-			}, {hint "aborted"}, [(_this select 0)]] call CBA_fnc_progressBar;
+			player PlayMove "Acts_carFixingWheel"; ["Assembling MHQ", 10, {!(((_this select 0) select 0) getVariable "GW_MHQ_Assembled")}, {
+				([QGVAR(Assembled), [((_this select 0) select 0), true]] call CBA_fnc_serverEvent); player SwitchMove "";
+			}, {hint "Aborted"; player SwitchMove "";}, [(_this select 0)]] call CBA_fnc_progressBar;
 		},ARGUMENT(_mhq),(CONDITION_1 + "&& !" + CONDITION_2),7];
 		_add pushback [_mhq, _id];
 
-		_id = _mhq addAction ["Disassemble MHQ",{
+		_id = _mhq addAction ["Disassemble MHQ",{ player PlayMove "Acts_carFixingWheel";
 			["Disassemble MHQ", 10, {(((_this select 0) select 0) getVariable "GW_MHQ_Assembled")}, {
-				([QGVAR(Assembled), [((_this select 0) select 0), false]] call CBA_fnc_serverEvent);
-			}, {hint "aborted"}, [(_this select 0)]] call CBA_fnc_progressBar;
+				([QGVAR(Assembled), [((_this select 0) select 0), false]] call CBA_fnc_serverEvent); player SwitchMove "";
+			}, {hint "Aborted"; player SwitchMove "";}, [(_this select 0)]] call CBA_fnc_progressBar;
 		},ARGUMENT(_mhq),(CONDITION_1 + "&& " + CONDITION_2),7];
 		_add pushback [_mhq, _id];
 
@@ -97,10 +97,10 @@
 		_id = (([_mhq] call FUNC(getFlag))) addAction[format ["Teleport to %1", _mhq],{[player, (_this select 3)] call bis_fnc_moveToRespawnPosition},ARGUMENT(_mhq),(CONDITION_1),7];
 		_add pushback [([_mhq] call FUNC(getFlag)), _id];
 	} else {
-		_id = _mhq addAction ["Activate MHQ",{
+		_id = _mhq addAction ["Activate MHQ",{ player PlayMove "Acts_carFixingWheel";
 			["Activating MHQ", 5, {!(((_this select 0) select 0) getVariable "GW_MHQ_Active")}, {
-				([QGVAR(Enabled), [((_this select 0) select 0), true, str([player] call EFUNC(Common,getSide))]] call CBA_fnc_serverEvent);
-			}, {hint "aborted"}, [(_this select 0)]] call CBA_fnc_progressBar;
+				([QGVAR(Enabled), [((_this select 0) select 0), true, str([player] call EFUNC(Common,getSide))]] call CBA_fnc_serverEvent); player SwitchMove "";
+			}, {hint "Aborted"; player SwitchMove "";}, [(_this select 0)]] call CBA_fnc_progressBar;
 		},ARGUMENT(_mhq),CONDITION_1,7];
 		_add pushback [_mhq, _id];
 	};
