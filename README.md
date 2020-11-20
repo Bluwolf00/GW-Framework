@@ -4,16 +4,8 @@ Edited by the GOL Technical Team.</br>
 
 # Issues
 * Duplicated System Text with both the addon and the framework displaying messages on Safestart in SP.
-* Fix Equipment Box Static Weapons Retrieval and Packing Of Statics.</br>
-* Update ACE Settings.</br>
-* Update TFAR Settings.</br>
-* Pack Addon.
 
-# Main
-
-Collection of addons made for GOL-Clan and the reason for this mod is simple, Updated with new standards for performance and easy structure.
-It is also modular similar to CBA in that way.
-Most functions are created by myself or someone in GOL, however if not, that person have been credited in that function
+# Functions
 
 The main functions of the framework include:
 
