@@ -5,6 +5,7 @@ Edited by the GOL Technical Team.</br>
 # Issues/Todo
 * Duplicated System Text with both the addon and the framework displaying messages on Safestart in SP.
 * Add VZ99 crate.
+* Refine Jason's Classes/Loadouts.
 
 # Functions
 
