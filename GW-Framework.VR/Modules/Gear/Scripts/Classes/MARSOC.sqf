@@ -6,7 +6,7 @@ _vest = "rhsusf_spc_light";
 _backpack = "CUP_B_USMC_AssaultPack";
 _backpackRadio = _backpack;
 if (GVARMAIN(mod_TFAR)) then {
-	_backpackRadio = "tf_rt1523g_big_bwmod";
+	_backpackRadio = "tfar_rt1523g_big_bwmod";
 };
 
 if (_role in ["fac","sl","ftl","g","jtac"]) then {

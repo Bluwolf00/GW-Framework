@@ -7,7 +7,7 @@ _vest = "CUP_V_I_Guerilla_Jacket";
 _backpack = "CUP_B_CivPack_WDL";
 _backpackRadio = _backpack;
 if (GVARMAIN(mod_TFAR)) then {
-	_backpackRadio = "tf_mr3000_rhs";
+	_backpackRadio = "tfar_mr3000_rhs";
 };
 
 switch (selectRandom [1,2,3]) do {

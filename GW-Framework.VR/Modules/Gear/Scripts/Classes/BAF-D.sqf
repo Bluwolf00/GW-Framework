@@ -6,7 +6,7 @@ _vest = "CUP_V_BAF_Osprey_Mk2_DDPM_Grenadier";
 _backpack = "CUP_B_USMC_AssaultPack";
 _backpackRadio = _backpack;
 if (GVARMAIN(mod_TFAR)) then {
-	_backpackRadio = "tf_rt1523g_big";
+	_backpackRadio = "tfar_rt1523g_big";
 };
 
 if (_role isEqualTo "sl") then {

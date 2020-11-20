@@ -6,7 +6,7 @@ _vest = "V_HarnessOGL_ghex_F";
 _backpack = "B_FieldPack_ghex_F";
 _backpackRadio = _backpack;
 if (GVARMAIN(mod_TFAR)) then {
-	_backpackRadio = "tf_mr3000_bwmod";
+	_backpackRadio = "tfar_mr3000_bwmod";
 };
 
 if (_role in ["ag","ammg"]) then {

@@ -18,7 +18,7 @@ _vest = "CUP_V_RUS_6B3_1";
 _backpack = "CUP_B_AlicePack_Khaki";
 _backpackRadio = _backpack;
 if (GVARMAIN(mod_TFAR)) then {
-	_backpackRadio = "tf_anprc155";
+	_backpackRadio = "tfar_anprc155";
 };
 
 if (_role in ["r","rat","mat","amat"]) then {

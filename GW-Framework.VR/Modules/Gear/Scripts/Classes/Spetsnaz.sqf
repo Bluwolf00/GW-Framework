@@ -6,7 +6,7 @@ _vest = "V_SmershVest_01_F";
 _backpack = "B_FieldPack_green_F";
 _backpackRadio = _backpack;
 if (GVARMAIN(mod_TFAR)) then {
-	_backpackRadio = "tf_rt1523g_black";
+	_backpackRadio = "tfar_rt1523g_black";
 };
 
 if (_role in ["fac","sl","ftl","g","jtac"]) then {
@@ -64,4 +64,3 @@ _MAT_mag_HE = "Vorona_HE";
 
 _pistol = ["hgun_Rook40_F", "muzzle_snds_L", "", "", ""];
 _pistol_mag = "16Rnd_9x21_Mag";
-

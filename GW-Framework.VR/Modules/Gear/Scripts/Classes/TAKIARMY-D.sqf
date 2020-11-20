@@ -6,7 +6,7 @@ _uniform = "CUP_U_O_TK_Green";
 _vest = "V_TacVest_oli";
 _backpack = "CUP_B_CivPack_WDL";
 if (GVARMAIN(mod_TFAR)) then {
-	_backpackRadio = "tf_mr6000l";
+	_backpackRadio = "tfar_mr6000l";
 };
 
 if (_role in ["ag","ammg"]) then {

@@ -6,7 +6,7 @@ _vest = "rhsusf_iotv_ocp_Rifleman";
 _backpack = "rhsusf_assault_eagleaiii_ocp";
 _backpackRadio = _backpack;
 if (GVARMAIN(mod_TFAR)) then {
-	_backpackRadio = "tf_rt1523g_big_bwmod_tropen";
+	_backpackRadio = "tfar_rt1523g_big_bwmod_tropen";
 };
 
 if (_role in ["fac","sl","ftl","g","jtac"]) then {

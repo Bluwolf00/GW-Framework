@@ -19,7 +19,7 @@ _vest = "CUP_V_O_SLA_Carrier_Belt02";
 _backpack = "CUP_B_AlicePack_Bedroll";
 _backpackRadio = _backpack;
 if (GVARMAIN(mod_TFAR)) then {
-	_backpackRadio = "tf_mr3000_multicam";
+	_backpackRadio = "tfar_mr3000_multicam";
 };
 
 if (_role in ["ag","ammg"]) then {

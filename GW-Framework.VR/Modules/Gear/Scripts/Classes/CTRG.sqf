@@ -6,7 +6,7 @@ _vest = "V_PlateCarrierL_CTRG";
 _backpack = "B_Kitbag_rgr";
 _backpackRadio = _backpack;
 if (GVARMAIN(mod_TFAR)) then {
-	_backpackRadio = "tf_rt1523g_big_bwmod";
+	_backpackRadio = "tfar_rt1523g_big_bwmod";
 };
 
 // Individual Role Deviations
@@ -27,7 +27,7 @@ if (_role isEqualTo "p") then {
 	_helmet = "H_CrewHelmetHeli_O";
 	_uniform = "U_B_CTRG_Soldier_2_F";
 	_vest = "V_PlateCarrierL_CTRG";
-	_backpackRadio = "tf_rt1523g_big_bwmod";
+	_backpackRadio = "tfar_rt1523g_big_bwmod";
 };
 if (_role isEqualTo "crew") then {
 	_helmet = "H_HelmetCrew_B";

@@ -6,7 +6,7 @@ _vest = selectRandom ["V_PlateCarrierIA2_dgtl","V_PlateCarrierIA1_dgtl"];
 _backpack = "B_FieldPack_oli";
 _backpackRadio = _backpack;
 if (GVARMAIN(mod_TFAR)) then {
-	_backpackRadio = "tf_anprc155";
+	_backpackRadio = "tfar_anprc155";
 };
 if (_role in ["ag","ammg"]) then {
 	_backpack = "B_Carryall_oli";

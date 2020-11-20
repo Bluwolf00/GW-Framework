@@ -5,7 +5,7 @@ _uniform = "CUP_U_B_USArmy_TwoKnee";
 _vest = "CUP_V_B_IOTV_TL";
 _backpack = "CUP_B_AssaultPack_ACU";
 if (GVARMAIN(mod_TFAR)) then {
-	_backpackRadio = "tf_mr3000_multicam";
+	_backpackRadio = "tfar_mr3000_multicam";
 };
 
 if (_role in ["r","rat","mat","amat"]) then {

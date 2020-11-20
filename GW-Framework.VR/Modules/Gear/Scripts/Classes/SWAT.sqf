@@ -6,7 +6,7 @@ _vest = "V_TacVest_gen_F";
 _backpack = "B_AssaultPack_blk";
 _backpackRadio = _backpack;
 if (GVARMAIN(mod_TFAR)) then {
-	_backpackRadio = "tf_bussole";
+	_backpackRadio = "tfar_bussole";
 };
 
 if (_role in ["ag","ammg"]) then {
@@ -54,7 +54,7 @@ _rifleMarksman_mag = "rhsusf_10Rnd_762x51_m993_Mag";
 _rifleMarksman_mag_tr = "rhsusf_10Rnd_762x51_m993_Mag";
 
 if (_role in ["fac","sl","ftl","g","jtac"]) then {
-	
+
 	_pistol = ["rhs_weap_M320", "", "", "", ""];
 	_pistol_mag = "rhs_mag_m4009";
 };

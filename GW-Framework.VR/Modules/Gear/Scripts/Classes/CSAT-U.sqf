@@ -6,7 +6,7 @@ _vest = "V_HarnessO_gry";
 _backpack = "B_FieldPack_oucamo";
 _backpackRadio = _backpack;
 if (GVARMAIN(mod_TFAR)) then {
-	_backpackRadio = "tf_mr3000_bwmod_tropen";
+	_backpackRadio = "tfar_mr3000_bwmod_tropen";
 };
 
 if (_role in ["ag","ammg"]) then {

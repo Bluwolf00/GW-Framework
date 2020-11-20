@@ -7,7 +7,7 @@ _vest = "V_PlateCarrier2_tna_F";
 _backpack = "B_ViperHarness_oli_F";
 _backpackRadio = _backpack;
 if (GVARMAIN(mod_TFAR)) then {
-	_backpackRadio = "tf_anprc155";
+	_backpackRadio = "TFAR_anprc155";
 };
 
 if (_role in ["ag","ammg"]) then {

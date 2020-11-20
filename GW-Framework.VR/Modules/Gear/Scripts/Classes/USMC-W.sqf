@@ -12,7 +12,7 @@ _uniform = "rhs_uniform_FROG01_wd";
 _vest = "rhsusf_spc_light";
 _backpack = "rhsusf_falconii_coy_gr";
 if (GVARMAIN(mod_TFAR)) then {
-	_backpackRadio = "tf_mr3000_multicam";
+	_backpackRadio = "tfar_mr3000_multicam";
 };
 
 if (_role in ["ftl","sl"]) then {

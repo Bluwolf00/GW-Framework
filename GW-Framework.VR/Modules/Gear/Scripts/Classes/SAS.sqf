@@ -8,7 +8,7 @@ _vest = "CUP_V_B_BAF_MTP_Osprey_Mk4_Rifleman";
 _backpack = "CUP_B_Motherlode_MTP";
 _backpackRadio = _backpack;
 if (GVARMAIN(mod_TFAR)) then {
-	_backpackRadio = "tf_rt1523g_big_rhs";
+	_backpackRadio = "tfar_rt1523g_big_rhs";
 };
 
 if (_role in ["fac","sl","ftl","jtac","pl"]) then {

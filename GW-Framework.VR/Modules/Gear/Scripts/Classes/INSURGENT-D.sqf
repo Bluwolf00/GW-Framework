@@ -7,7 +7,7 @@ _vest = selectRandom ["CUP_V_OI_TKI_Jacket1_03","CUP_V_OI_TKI_Jacket3_01","CUP_V
 _backpack = selectRandom ["CUP_B_TKI_AlicePack_Khaki_AmmoAK74","CUP_B_TIK_CivPack_WDL_Ammo"];
 _backpackRadio = _backpack;
 if (GVARMAIN(mod_TFAR)) then {
-	_backpackRadio = "tf_mr3000_rhs";
+	_backpackRadio = "tfar_mr3000_rhs";
 };
 
 if ((random 1) > 0.90) then {
