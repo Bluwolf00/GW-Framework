@@ -60,7 +60,7 @@ ace_parachute_hideAltimeter = true;
 force ace_cookoff_ammoCookoffDuration = 2.3;
 force ace_cookoff_enable = 1;
 force ace_cookoff_enableAmmobox = true;
-force ace_cookoff_enableAmmoCookoff = true;
+force ace_cookoff_enableAmmoCookoff = false;
 force ace_cookoff_probabilityCoef = 0.7;
 
 // ACE Crew Served Weapons ----------------------------------------------------------------------
@@ -78,7 +78,7 @@ force ace_explosives_requireSpecialist = false;
 // ACE Fragmentation Simulation ----------------------------------------------------------------------
 force ace_frag_enabled = true;
 force ace_frag_maxTrack = 25;
-force ace_frag_maxTrackPerFrame = 15;
+force ace_frag_maxTrackPerFrame = 25;
 force ace_frag_reflectionsEnabled = true;
 force ace_frag_spallEnabled = true;
 
