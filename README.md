@@ -36,7 +36,6 @@ Enhancment:
 * AKM replaced with AK-74 (545x39 caliber).
 
 Main:
-* Added new GOL Difficulty and set is as standard, (should no longer need to pick difficulty).
 * Hidden BIS standard mission.
 * Added Earplugs to the equipment box.
 
@@ -47,6 +46,11 @@ MHQ:
 NEKY_ServiceStation:
 * Fixed and re-tweaked version of the serviceStation which works on any vehicle.
 * Includes: Repair, Refuel, Rearm and Full Service (All of the Above).
+
+NEKY_Supply:
+* Added Support for NEKY_Supply script.
+* Allows Squad Leaders and Team Leaders to call in ammunition and medical resupplies by landing or airdrop.
+* Adapted to ACE Interaction Menu by Luke.
 
 ACE Settings:
 * Updated for the latest revamp of Advanced Combat Environment (3)
