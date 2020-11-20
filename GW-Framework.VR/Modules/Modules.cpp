@@ -2,7 +2,6 @@
 	#include "Common\Module.hpp"
 	#include "GameLoop\Module.hpp"
 	#include "Gear\Module.hpp"
-	#include "HeadlessController\Module.hpp"
 	#include "MHQ\Module.hpp"
 	#include "MiscSettings\Module.hpp"
 	#include "Radios\Module.hpp"
@@ -10,6 +9,7 @@
 	#include "Settings_ACE\Module.hpp"
 
 //	Extra Modules
+//  #include "HeadlessController\Module.hpp"
 //	#include "Effects\Module.hpp"
 //	#include "EndScreen\Module.hpp"
 //	#include "Example\Module.hpp"
