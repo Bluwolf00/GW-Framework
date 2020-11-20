@@ -2,8 +2,9 @@
 Guzzenvonlidl's custom framework for Arma 3</br>
 Edited by the GOL Technical Team.</br>
 
-# Issues
+# Issues/Todo
 * Duplicated System Text with both the addon and the framework displaying messages on Safestart in SP.
+* Add VZ99 crate.
 
 # Functions
 
@@ -38,6 +39,7 @@ Enhancment:
 Main:
 * Hidden BIS standard mission.
 * Added Earplugs to the equipment box.
+* Added Toolkits to Pilot Vests.
 
 MHQ:
 * 3 Varients of Mobile Headquarters: Small, Medium and FOB. Each with a custom composition which can be edited.
@@ -46,6 +48,7 @@ MHQ:
 NEKY_ServiceStation:
 * Fixed and re-tweaked version of the serviceStation which works on any vehicle.
 * Includes: Repair, Refuel, Rearm and Full Service (All of the Above).
+* Updated to also use ACE_Rearm Stations.
 
 NEKY_Supply:
 * Added Support for NEKY_Supply script.
